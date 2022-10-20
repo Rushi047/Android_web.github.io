@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css" />
+   </head>
+   <body> <!--Do Not TOUCH START-->
+       <!--Dark theme start-->
+     <center> 
+      <button onclick="myFunction()"><span style='font-size:30px;'>&#9728;</span></button>
+     </center>
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+      <!--Dark theme End-->
+          <!--*******************Google Translation code start************************-->
+          <!--
+          <style type="text/css">
+ 
+            /*google translate Dropdown */
+            
+            #google_translate_element select{
+            background:#f6edfd;
+            color:#383ffa;
+            border: none;
+            border-radius:3px;
+            padding:6px 8px
+            }
+            
+            /*google translate link | logo */
+              .goog-logo-link{
+              display:none!important;
+              }
+            .goog-te-gadget{
+            color:transparent!important;
+            }
+            
+            /* google translate banner-frame */
+            
+            .goog-te-banner-frame{
+            display:none !important;
+            }
+            
+            #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+           .goog-text-highlight { background: none !important; box-shadow: none !important;}
+            
+            body{top:0!important;}
+              </style>
+            <div id='google_translate_element'></div>
+            <script>
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+            }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>-->
+            <!--*******************Google Translation code End************************-->
+    <!--Do Not TOUCH END-->
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('../Mahesh/Mahesh_img/14.1.png')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--first block change from here-->
+               <h5>Event log </h5>
+               <p>
+                <ul class="points">
+                    <li>In Android, there&rsquo;s quite a method to intercept the events from a user&rsquo;s interaction with your application. When considering events within your interface, the approach is to capture the events from the precise View object that the user interacts with. The View class provides the means to try to do so. Within the varied View classes that you&rsquo;re going to use to compose your layout, you&rsquo;ll notice several public callback methods that look useful for UI events. These methods are called by the&nbsp;<strong>Android framework</strong>&nbsp;when the respective action occurs thereon object. For instance, when a View (such as a Button) is touched, the&nbsp;<strong>onTouchEvent()</strong>&nbsp;method is named thereon object. However, to intercept this, you must extend the class and override the method. However, extending every View object to handle such an event would not be practical. This is why the View class also contains a set of nested interfaces with callbacks that you simply can far more easily define. These interfaces, called&nbsp;<strong>Event listeners</strong>, are your ticket to capturing the user interaction together with your UI.</li>
+                    </ul>
+               </p>
+               <p>
+                <ul class="points">
+                    <li><strong>Event Listener</strong>&nbsp;is an interface within the View class that contains one call-back method. These methods are going to be called by the Android framework when the View which is registered with the listener is triggered by user interaction with the item in UI. Included in the event listener interfaces are the following callback methods:</li>
+                    <li><strong>onClick()</strong></li>
+                    <li><strong>onLongClick()</strong></li>
+                    <li><strong>onFocusChange()</strong></li>
+                    <li><strong>onKey()</strong></li>
+                    <li><strong>onTouch()</strong></li>
+                    <li><strong>Event Registration</strong>&nbsp;is the process by which an Event Handler gets registered with an Event Listener so that the handler is called when the Event Listener fires the event. This example illustrates how to register an on-click listener for a Button&nbsp;</li>
+                    </ul>
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns content">
+            <div class="content-container">
+               <!--second block change from here-->
+               <h5>Why do we use it?</h5>
+               <p>
+                <ul class="points">
+                    <li>
+                    <h3>Android Event Handlers</h3>
+                    <p><strong>Event Handlers</strong>&nbsp;are useful to define several callback methods when we are building custom components from view. Following are some of the commonly used callback methods for event handling in android applications.</p>
+                    <figure class="table">
+                    <table>
+                    <thead>
+                    <tr>
+                    <th>
+                    <p>Method</p>
+                    </th>
+                    <th>
+                    <p>Description</p>
+                    </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td><strong>onKeyDown()</strong></td>
+                    <td>This method is called when a new key event occurs.</td>
+                    </tr>
+                    <tr>
+                    <td><strong>onKeyUp()</strong></td>
+                    <td>This method is called when a key up event occurs.</td>
+                    </tr>
+                    <tr>
+                    <td><strong>onTrackballEvent()</strong></td>
+                    <td>This method is called when a trackball motion event occurs.</td>
+                    </tr>
+                    <tr>
+                    <td><strong>onTouchEvent()</strong></td>
+                    <td>This method is called when a touch screen motion event occurs.</td>
+                    </tr>
+                    <tr>
+                    <td><strong>onFocusChanged()</strong></td>
+                    <td>This method is called when the view gains or loses focus.</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </figure>
+                    </li>
+                    </ul>
+                 
+               </p>
+            </div>
+         </div>
+         <div class="columns image" style="background-image:url('../Mahesh/Mahesh_img/14.2.jpg')">
+            &nbsp;
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('../Mahesh/Mahesh_img/14.3.jpg')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--third block change from here-->
+               <h5>Why do we use it?</h5>
+               <p>
+                Step 1: Create a new project in Android Studio
+
+                To create a new project in Android Studio please refer to How to Create/Start a New Project in Android Studio in Kotlin. Note that select Kotlin as the programming language.
+                
+               </p><p> Step 2: Working with the XML Files
+                
+                To design the UI, code is present under the res\layout folder in the form of XML. They are used in the Activity files and once the XML file is in scope inside the activity, one can access the components present in the XML. Below is the code for the activity_main.xml file. Comments are added inside the code to understand the code in more detail. 
+                
+                </p>
+               <p>
+                Step 3: Working with the MainActivity File
+
+                Below is the code for the MainActivity.kt file. Comments are added inside the code to understand the code in more detail. 
+               </p>
+            </div>
+         </div>
+      </div>
+     <center><button><a href="15.html" type="button"><span style='font-size:50px;'>&#8594;</span></a></button></center>
+   </body>
+</html>

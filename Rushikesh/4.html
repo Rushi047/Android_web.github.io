@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css" />
+   </head>
+   <body> <!--Do Not TOUCH START-->
+       <!--Dark theme start-->
+     <center> 
+      <button onclick="myFunction()"><span style='font-size:30px;'>&#9728;</span></button>
+     </center>
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+      <!--Dark theme End-->
+          <!--*******************Google Translation code start************************-->
+          <!--
+          <style type="text/css">
+ 
+            /*google translate Dropdown */
+            
+            #google_translate_element select{
+            background:#f6edfd;
+            color:#383ffa;
+            border: none;
+            border-radius:3px;
+            padding:6px 8px
+            }
+            
+            /*google translate link | logo */
+              .goog-logo-link{
+              display:none!important;
+              }
+            .goog-te-gadget{
+            color:transparent!important;
+            }
+            
+            /* google translate banner-frame */
+            
+            .goog-te-banner-frame{
+            display:none !important;
+            }
+            
+            #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+           .goog-text-highlight { background: none !important; box-shadow: none !important;}
+            
+            body{top:0!important;}
+              </style>
+            <div id='google_translate_element'></div>
+            <script>
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+            }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>-->
+            <!--*******************Google Translation code End************************-->
+    <!--Do Not TOUCH END-->
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('4.1.png')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--first block change from here-->
+               <h5 class="devsite-page-title">Intents and Intent Filters</h5>
+<div class="devsite-article-body clearfix
+  ">
+<p>An&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;is a messaging object you can use to request an action from another&nbsp;<a href="https://developer.android.com/guide/components/fundamentals#Components">app component</a>. Although intents facilitate communication between components in several ways, there are three fundamental use cases:</p>
+<p>&nbsp;</p>
+<ul>
+<li><strong>Starting an activity</strong>
+<p>An&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/Activity">Activity</a></code>&nbsp;represents a single screen in an app. You can start a new instance of an&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/Activity">Activity</a></code>&nbsp;by passing an&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;to&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Context#startActivity(android.content.Intent)">startActivity()</a></code>. The&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;describes the activity to start and carries any necessary data.</p>
+<p>If you want to receive a result from the activity when it finishes, call&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/Activity#startActivityForResult(android.content.Intent,%20int)">startActivityForResult()</a></code>. Your activity receives the result as a separate&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;object in your activity's&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/Activity#onActivityResult(int,%20int,%20android.content.Intent)">onActivityResult()</a></code>&nbsp;callback. For more information, see the&nbsp;<a href="https://developer.android.com/guide/components/activities">Activities</a>&nbsp;guide.</p>
+</li>
+<li><strong>Starting a service</strong>
+<p>A&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/Service">Service</a></code>&nbsp;is a component that performs operations in the background without a user interface. With Android 5.0 (API level 21) and later, you can start a service with&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/job/JobScheduler">JobScheduler</a></code>. For more information about&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/job/JobScheduler">JobScheduler</a></code>, see its&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/job/JobScheduler">API-reference documentation</a></code>.</p>
+<p>For versions earlier than Android 5.0 (API level 21), you can start a service by using methods of the&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/app/Service">Service</a></code>&nbsp;class. You can start a service to perform a one-time operation (such as downloading a file) by passing an&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;to&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Context#startService(android.content.Intent)">startService()</a></code>. The&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;describes the service to start and carries any necessary data.</p>
+<p>If the service is designed with a client-server interface, you can bind to the service from another component by passing an&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;to&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Context#bindService(android.content.Intent,%20android.content.ServiceConnection,%20int)">bindService()</a></code>. For more information, see the&nbsp;<a href="https://developer.android.com/guide/components/services">Services</a>&nbsp;guide.</p>
+</li>
+</ul>
+</div>
+            </div>
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns content">
+            <div class="content-container">
+               <!--second block change from here-->
+               <h5 id="Types" role="presentation" data-text="Intent types"><span class="devsite-heading" role="heading" aria-level="2">Intent types</span><button class="devsite-heading-link button-flat material-icons" type="button" aria-label="Copy link to this section: Intent types" data-title="Copy link to this section: Intent types" data-id="Types"></button></h2>
+                <p>There are two types of intents:</p>
+                <ul>
+                <li><strong>Explicit intents</strong>&nbsp;specify which application will satisfy the intent, by supplying either the target app's package name or a fully-qualified component class name. You'll typically use an explicit intent to start a component in your own app, because you know the class name of the activity or service you want to start. For example, you might start a new activity within your app in response to a user action, or start a service to download a file in the background.</li>
+                <li><strong>Implicit intents</strong>&nbsp;do not name a specific component, but instead declare a general action to perform, which allows a component from another app to handle it. For example, if you want to show the user a location on a map, you can use an implicit intent to request that another capable app show a specified location on a map.</li>
+                </ul>
+                <p>Figure 1 shows how an intent is used when starting an activity. When the&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;object names a specific activity component explicitly, the system immediately starts that component.</p>
+            </div>
+         </div>
+         <div class="columns image" style="background-image:url('4.2.jpg')">
+            &nbsp;
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('4.3.png')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--third block change from here-->
+               <h5 id="Building" role="presentation" data-text="Building an intent"><span class="devsite-heading" role="heading" aria-level="2">Building an intent</span><button class="devsite-heading-link button-flat material-icons" type="button" aria-label="Copy link to this section: Building an intent" data-title="Copy link to this section: Building an intent" data-id="Building"></button></h2>
+                <p>An&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;object carries information that the Android system uses to determine which component to start (such as the exact component name or component category that should receive the intent), plus information that the recipient component uses in order to properly perform the action (such as the action to take and the data to act upon).</p>
+                <p>The primary information contained in an&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;is the following:</p>
+                <dl>
+                <dt><strong>Component name</strong></dt>
+                <dd>The name of the component to start.
+                <p>This is optional, but it's the critical piece of information that makes an intent&nbsp;<em>explicit</em>, meaning that the intent should be delivered only to the app component defined by the component name. Without a component name, the intent is&nbsp;<em>implicit</em>&nbsp;and the system decides which component should receive the intent based on the other intent information (such as the action, data, and category&mdash;described below). If you need to start a specific component in your app, you should specify the component name.</p>
+                <p>This field of the&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;is a&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/ComponentName">ComponentName</a></code>&nbsp;object, which you can specify using a fully qualified class name of the target component, including the package name of the app, for example,&nbsp;<code dir="ltr" translate="no">com.example.ExampleActivity</code>. You can set the component name with&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent#setComponent(android.content.ComponentName)">setComponent()</a></code>,&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent#setClass(android.content.Context,%20java.lang.Class%3C?%3E)">setClass()</a></code>,&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent#setClassName(java.lang.String,%20java.lang.String)">setClassName()</a></code>, or with the&nbsp;<code dir="ltr" translate="no"><a href="https://developer.android.com/reference/android/content/Intent">Intent</a></code>&nbsp;constructor.</p>
+                </dd>
+                </dl>
+            </div>
+         </div>
+      </div>
+     <center><button><a href="5.html" type="button"><span style='font-size:50px;'>&#8594;</span></a></button></center>
+   </body>
+</html>

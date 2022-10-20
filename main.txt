@@ -1,0 +1,36 @@
+ Main instuction about our web:-
+  1]Read all comments 
+  2]add your favourite android images ,but not link any image {you only store ,i am linking }.
+  3]change only text.
+  4] doesn't  change any tag.
+  5]images save as same name as .html   eg:- for Aniket Gardle =6.html  and image=6.png/jpeg
+  6]give aproprite title :-eg:-for mahesh =<h5>Tools in Android Studio</h5>
+   
+      My subject:-
+   1]intrduction to android   //save as index.html
+   2]history   //2.html
+   3]installation   //3.html
+   4]Intents and Intent Filters //4.html
+   5]Ide   //5.html
+
+     Aniket :-
+   1] Gardle     //save 6.html
+   2] refactor   //7.html
+   3]sdk   //8.html
+   4]Styles and Themes  //9.html 
+      //use link (https://developer.android.com/develop/ui/views/theming/themes?hl=en)
+   5]what is XML?  //10.html
+   
+     Mahesh:-
+   1]Tools in android studio // save as 11.html
+   2]Difference between android studio and intellij idea  //12.html
+   3]Mainfest file  //13.html
+   4]Event log  //14.html
+   5] Firebase  //15.html
+    
+   Vaibhav :-
+   1]upload project on github //save as 16.html
+   2] version control   //17.html
+   3] how to update android studio ?  //18.html
+   4]create signed apk  //19.html
+   5]difference between signed apk and apk  //20.html

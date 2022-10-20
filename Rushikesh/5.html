@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css" />
+   </head>
+   <body> <!--Do Not TOUCH START-->
+       <!--Dark theme start-->
+     <center> 
+      <button onclick="myFunction()"><span style='font-size:30px;'>&#9728;</span></button>
+     </center>
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+      <!--Dark theme End-->
+          <!--*******************Google Translation code start************************-->
+          <!--
+          <style type="text/css">
+ 
+            /*google translate Dropdown */
+            
+            #google_translate_element select{
+            background:#f6edfd;
+            color:#383ffa;
+            border: none;
+            border-radius:3px;
+            padding:6px 8px
+            }
+            
+            /*google translate link | logo */
+              .goog-logo-link{
+              display:none!important;
+              }
+            .goog-te-gadget{
+            color:transparent!important;
+            }
+            
+            /* google translate banner-frame */
+            
+            .goog-te-banner-frame{
+            display:none !important;
+            }
+            
+            #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+           .goog-text-highlight { background: none !important; box-shadow: none !important;}
+            
+            body{top:0!important;}
+              </style>
+            <div id='google_translate_element'></div>
+            <script>
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+            }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>-->
+            <!--*******************Google Translation code End************************-->
+    <!--Do Not TOUCH END-->
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('5.1.png')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--first block change from here-->
+              <h5><strong>Android Studio IDE Features</strong></h5>
+              <h5 class="devsite-page-title">Build and run your app</h1>
+                <div class="devsite-article-body clearfix
+                  ">
+                <p>When you want to see how your app looks and behaves on a device, you need to build and run it. Android Studio sets up new projects so that you can deploy your app to a virtual or a physical device with just a few clicks.</p>
+                <p>This overview focuses on how to use Android Studio to build and run your app for the purposes of testing and debugging. For information on how to use Android Studio to build your app so that it can be released to users, see&nbsp;<a href="https://developer.android.com/studio/run/build-for-release">Build your app for release to users</a>. For more detailed information about managing and customizing your build, with or without Android Studio, see&nbsp;<a href="https://developer.android.com/studio/build">Configure your build</a>.</p>
+                <h2 id="basic-build-run" role="presentation" data-text="Basic build and run"><span class="devsite-heading" role="heading" aria-level="2">Basic build and run</span><button class="devsite-heading-link button-flat material-icons" type="button" aria-label="Copy link to this section: Basic build and run" data-title="Copy link to this section: Basic build and run" data-id="basic-build-run"></button></h2>
+                <p>To build and run your app, follow these steps:</p>
+                <ol>
+                <li>In the toolbar, select your app from the run configurations drop-down menu.</li>
+                <li>
+                <p>From the target device drop-down menu, select the device that you want to run your app on.</p>
+                <p>If you don't have any devices configured, then you need to either&nbsp;<a href="https://developer.android.com/studio/run/managing-avds#createavd">create an Android Virtual Device</a>&nbsp;to use the&nbsp;<a href="https://developer.android.com/studio/run/emulator">Android Emulator</a>&nbsp;or&nbsp;<a href="https://developer.android.com/studio/run/device#connect">connect a physical device</a>.</p>
+                </li>
+                <li>
+                <p>Click&nbsp;<strong>Run</strong>&nbsp;<img class="inline-icon" src="https://developer.android.com/static/studio/images/buttons/toolbar-run.png" alt="" /></p>
+                </li>
+                </ol>
+                <p>Android Studio will warn you if you attempt to launch your project to a device that has an error or a warning associated with it. Iconography and stylistic changes differentiate between&nbsp;<em>errors</em>&nbsp;(device selections that result in a broken configuration) and&nbsp;<em>warnings</em>&nbsp;(device selections that may result in unexpected behavior but are still runnable).</p>
+                </div>
+              
+            </div>
+         </div>
+      </div>
+      <br>
+      <div class="section-container">
+         <div class="columns content">
+            <div class="content-container">
+               <!--second block change from here-->
+               <h5 id="gradle-console" role="presentation" data-text="   Monitor the build process "><span class="devsite-heading" role="heading" aria-level="2">Monitor the build process&nbsp;</span><button class="devsite-heading-link button-flat material-icons" type="button" aria-label="Copy link to this section: 
+                Monitor the build process
+              " data-title="Copy link to this section: 
+                Monitor the build process
+              " data-id="gradle-console"></button></h2>
+              <p>You can view details about the build process by clicking&nbsp;<strong>View &gt; Tool Windows &gt; Build</strong>&nbsp;(or by clicking&nbsp;<strong>Build</strong>&nbsp;<img class="inline-icon" src="https://developer.android.com/static/studio/images/buttons/window-build-2x.png" alt="" />&nbsp;in the tool window bar). The window displays the tasks that Gradle executes in order to build your app, as shown in figure 1.</p>
+              <p class="img-caption"><strong>Figure 1.</strong>&nbsp;The Build output window in Android Studio</p>
+              <ol class="callouts">
+              <li><strong>Build tab:</strong>&nbsp;Displays the tasks Gradle executes as a tree, where each node represents either a build phase or a group of task dependencies. If you receive build-time or compile-time errors, inspect the tree and select an element to read the error output, as shown in figure 2.&nbsp;
+              <p class="img-caption"><strong>Figure 2.</strong>&nbsp;Inspect the Build output window for error messages</p>
+              </li>
+              <li><strong>Sync tab:</strong>&nbsp;Displays tasks that Gradle executes to sync with your project files. Similar to the&nbsp;<strong>Build</strong>&nbsp;tab, if you encounter a sync error, select elements in the tree to find more information about the error.</li>
+              <li><strong>Restart:</strong>&nbsp;Performs the same action as selecting&nbsp;<strong>Build &gt; Make Project</strong>&nbsp;by generating intermediate build files for all modules in your project.</li>
+              <li><strong>Toggle view:</strong>&nbsp;Toggles between displaying task execution as a graphical tree and displaying more detailed text output from Gradle&mdash;this is the same output you see in the&nbsp;<strong>Gradle Console</strong>&nbsp;<img class="inline-icon" src="https://developer.android.com/static/images/tools/as-gradlebutton.png" alt="" />&nbsp;window on Android Studio 3.0 and earlier.</li>
+              </ol>
+              <p>If your build variants use product flavors, Gradle also invokes tasks to build those product flavors. To view the list of all available build tasks, click&nbsp;<strong>View &gt; Tool Windows &gt; Gradle</strong>&nbsp;(or click&nbsp;<strong>Gradle</strong>&nbsp;<img class="inline-icon" src="https://developer.android.com/static/studio/images/buttons/window-gradle.png" alt="" />&nbsp;in the tool window bar).</p>
+              <p>If an error occurs during the build process, Gradle may recommend some command-line options to help you resolve the issue, such as&nbsp;<code dir="ltr" translate="no">--stacktrace</code>&nbsp;or&nbsp;<code dir="ltr" translate="no">--debug</code>. To use command-line options with your build process:</p>
+              <ol>
+              <li>Open the&nbsp;<strong>Settings</strong>&nbsp;or&nbsp;<strong>Preferences</strong>&nbsp;dialog:
+              <ul>
+              <li>On Windows or Linux, select&nbsp;<strong>File</strong>&nbsp;&gt;&nbsp;<strong>Settings</strong>&nbsp;from the menu bar.</li>
+              <li>On Mac OSX, select&nbsp;<strong>Android Studio</strong>&nbsp;&gt;&nbsp;<strong>Preferences</strong>&nbsp;from the menu bar.</li>
+              </ul>
+              </li>
+              <li>Navigate to&nbsp;<strong>Build, Execution, Deployment</strong>&nbsp;&gt;&nbsp;<strong>Compiler</strong>.</li>
+              <li>In the text field next to&nbsp;<em>Command-line Options</em>, enter your command-line options.</li>
+              <li>Click&nbsp;<strong>OK</strong>&nbsp;to save and exit.</li>
+              </ol>
+              <p>Gradle applies these command-line options the next time you try building your app.</p>
+            </div>
+         </div>
+         <div class="columns image" style="background-image:url('5.2.png')">
+            &nbsp;
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('5.3.gif')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--third block change from here-->
+               <h5 id="live-edit" role="presentation" data-text="Live Edit (experimental)"><span class="devsite-heading" role="heading" aria-level="3">Live Edit (experimental)</span></h3>
+                <p>Live Edit is an experimental feature in the Android Studio Flamingo canary releases that allows you to update composables in emulators and physical devices in real time. When you update a composable function, your changes are applied in your device or emulator as you make that change. This functionality minimizes context switches between writing and building your app, allowing you to focus on writing code longer without interruption.</p>
+                <p>Live Edit is focused on UI- and UX-related code changes. Live Edit doesn't support changes such as method signature updates, adding new methods, or class hierarchy changes. For more information, see&nbsp;<a href="https://developer.android.com/studio/run#limitations">Limitations</a>.</p>
+                <p>This feature is not a replacement for building and running your application or&nbsp;<a href="https://developer.android.com/studio/run#apply-changes">Apply Changes</a>. Instead, it's designed to optimize your workflow as you build, deploy, and iterate to develop Compose UI.</p>
+                <p>The best practice workflow is as follows:</p>
+                <ol>
+                <li>Set up your application so that it can be Run.</li>
+                <li>Live Edit as much as possible, until you need to make a change that Live Edit doesn't support--for example, adding new methods while the app is running.</li>
+                <li>After you make an unsupported change, Run your app to resume Live Editing.</li>
+                </ol>
+            </div>
+         </div>
+      </div>
+     <center><button><a href="../Mahesh/11.html" type="button"><span style='font-size:50px;'>&#8594;</span></a></button></center>
+   </body>
+</html>

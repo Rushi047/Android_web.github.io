@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css" />
+   </head>
+   <body> <!--Do Not TOUCH START-->
+       <!--Dark theme start-->
+     <center> 
+      <button onclick="myFunction()"><span style='font-size:30px;'>&#9728;</span></button>
+     </center>
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+      <!--Dark theme End-->
+          <!--*******************Google Translation code start************************-->
+          <!--
+          <style type="text/css">
+ 
+            /*google translate Dropdown */
+            
+            #google_translate_element select{
+            background:#f6edfd;
+            color:#383ffa;
+            border: none;
+            border-radius:3px;
+            padding:6px 8px
+            }
+            
+            /*google translate link | logo */
+              .goog-logo-link{
+              display:none!important;
+              }
+            .goog-te-gadget{
+            color:transparent!important;
+            }
+            
+            /* google translate banner-frame */
+            
+            .goog-te-banner-frame{
+            display:none !important;
+            }
+            
+            #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+           .goog-text-highlight { background: none !important; box-shadow: none !important;}
+            
+            body{top:0!important;}
+              </style>
+            <div id='google_translate_element'></div>
+            <script>
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+            }
+            </script>
+            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>-->
+            <!--*******************Google Translation code End************************-->
+    <!--Do Not TOUCH END-->
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('../Mahesh/Mahesh_img/13.1.jpg')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--first block change from here-->
+               <h5>Mainfest file</h5>
+               <p>
+                Every project in Android includes a Manifest XML file, which is AndroidManifest.xml, located in the root directory of its project hierarchy. The manifest file is an important part of our app because it defines the structure and metadata of our application, its components, and its requirements.
+               </p>
+               <p>
+                This file includes nodes for each of the Activities, Services, Content Providers, and Broadcast Receiver that make the application, and using Intent Filters and Permissions determines how they coordinate with each other and other applications.
+
+                The manifest file also specifies the application metadata, which includes its icon, version number, themes, etc., and additional top-level nodes can specify any required permissions, unit tests, and define hardware, screen, or platform requirements. The manifest comprises a root manifest tag with a package attribute set to the project’s package. It should also include an xmls:android attribute that will supply several system attributes used within the file. We use the versionCode attribute is used to define the current application version in the form of an integer that increments itself with the iteration of the version due to update. Also, the versionName attribute is used to specify a public version that will be displayed to the users.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns content">
+            <div class="content-container">
+               <!--second block change from here-->
+               <h5></h5>
+               <p>
+                <h5>1. manifest</h5>
+                <p>The main component of the AndroidManifest.xml file is known as manifest. Additionally, the package field describes the activity class&rsquo;s package name. It must contain an &lt;application&gt; element with the xmlns:android and package attribute specified.</p>
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).<h5><strong>2. uses-sdk</strong></h5>
+                  <p>It is used to define a minimum and maximum SDK version by means of an API Level integer that must be available on a device so that our application functions properly, and the target SDK for which it has been designed using a combination of minSdkVersion, maxSdkVersion, and targetSdkVersion attributes, respectively. It is contained within the &lt;manifest&gt; element.</p></p>
+            </div>
+         </div>
+         <div class="columns image" style="background-image:url('../Mahesh/Mahesh_img/13.2.jpg')">
+            &nbsp;
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('../Mahesh/Mahesh_img/13.3.jfif')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <!--third block change from here-->
+               <h5></h5>
+               <p>
+                <h5>3. uses-permission</h5>
+                <p>It outlines a system permission that must be granted by the user for the app to function properly and is contained within the &lt;manifest&gt; element. When an application is installed (on Android 5.1 and lower devices or Android 6.0 and higher), the user must grant the application permissions.</p>
+               </p>
+               <p>
+                <h5><strong>4. application</strong></h5>
+                <p>A manifest can contain only one application node. It uses attributes to specify the metadata for your application (including its title, icon, and theme). During development, we should include a debuggable attribute set to true to enable debugging, then be sure to disable it for your release builds.&nbsp;The application node also acts as a container for the Activity, Service, Content Provider, and Broadcast Receiver nodes that specify the application components. The name of our custom application class can be specified using the android:name attribute.&nbsp;</p>
+               </p>
+            </div>
+         </div>
+      </div>
+     <center><button><a href="14.html" type="button"><span style='font-size:50px;'>&#8594;</span></a></button></center>
+   </body>
+</html>
